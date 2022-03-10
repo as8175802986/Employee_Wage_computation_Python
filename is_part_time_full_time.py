@@ -1,16 +1,15 @@
 import random
-def daily_wage():
-    EMP_RATE_PER_HOUR = 20
+def part_tine_full_time():
     number = random.randint(0, 1)
+    EMP_RATE_PER_HOUR = 20
     if number == 1:
-        print("Employee is present")
+        print("Employee is FullTime")
         empHrs = 8
     else:
-        print("Employee is absent")
-        empHrs = 0
+        print("Employee is PartTime")
+        empHrs = 4
     print("Daliy Wage is : ", empHrs * EMP_RATE_PER_HOUR)
 
 #Calling function to print result
 if __name__== '__main__':
-    print(daily_wage())
-
+    part_tine_full_time()
